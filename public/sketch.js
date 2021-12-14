@@ -9,18 +9,17 @@ function newConnection() {
 
 function newBroadcast(data) {
   console.log(data);
-  fill("red");
-  circle(data.x, data.y, 10);
+
+  line(data.x, data.x + 200, data.y, data.y - 200);
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(220);
+  background("beige");
 }
 
 function draw() {
-  fill("yellow");
-  circle(mouseX, mouseY, 20);
+  line(mouseX, mouseX * 2, mousey, mouseY * 2);
 }
 
 function mouseMoved() {
